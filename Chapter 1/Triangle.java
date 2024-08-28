@@ -1,12 +1,12 @@
 public class Triangle {
     public static void main(String[] args) {
-        
-        System.out.println("      T");
-        System.out.println("     TTT");
-        System.out.println("    TTTTT");
-        System.out.println("   TTTTTTT");
-        System.out.println("  TTTTTTTTT");
-        System.out.println(" TTTTTTTTTTT");
-        System.out.println("TTTTTTTTTTTTT");
+         int lines = 7;
+
+        for (int i = 0; i < lines; i++) {
+            
+            System.out.print(" ".repeat(lines - i - 1));
+            
+            System.out.println("T".repeat(1 + 2 * i));
+        }
     }
-}
+}       
